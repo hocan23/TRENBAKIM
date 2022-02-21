@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C8K-AQ-Ash">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="mcu-zN-e25">
+            <objects>
+                <viewController id="w4I-vl-Gek" customClass="LoginController" customModule="tren" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bn8-9F-sbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C6h-pe-AFF">
+                                <rect key="frame" x="91" y="116.5" width="232" height="560"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.3.sequence" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="O5u-iH-d1p">
+                                        <rect key="frame" x="0.0" y="1.5" width="232" height="277.5"/>
+                                        <color key="tintColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ncb-dC-MjE">
+                                        <rect key="frame" x="0.0" y="280" width="232" height="280"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hasan@gmail.com" borderStyle="roundedRect" placeholder="Lütfen E-Posta adresinizi giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vnE-QV-yFq">
+                                                <rect key="frame" x="0.0" y="0.0" width="232" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Lütfen şifrenizi giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2pj-1d-djP">
+                                                <rect key="frame" x="0.0" y="84" width="232" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-Vi-S3v">
+                                                <rect key="frame" x="0.0" y="168" width="232" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="GİRİŞ">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="girisPressed:" destination="w4I-vl-Gek" eventType="touchUpInside" id="9bd-tf-rd9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECT-H7-d05">
+                                                <rect key="frame" x="0.0" y="249" width="232" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="KAYIT OL">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="kayıtolPressed:" destination="w4I-vl-Gek" eventType="touchUpInside" id="EQ1-8a-SSd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vnE-QV-yFq" firstAttribute="top" secondItem="Ncb-dC-MjE" secondAttribute="top" id="0Kl-92-am0"/>
+                                            <constraint firstAttribute="trailing" secondItem="vnE-QV-yFq" secondAttribute="trailing" id="3Xc-rK-mX5"/>
+                                            <constraint firstAttribute="trailing" secondItem="ECT-H7-d05" secondAttribute="trailing" id="7tz-rp-zcb"/>
+                                            <constraint firstAttribute="trailing" secondItem="JY5-Vi-S3v" secondAttribute="trailing" id="9aa-lM-wHt"/>
+                                            <constraint firstAttribute="trailing" secondItem="ECT-H7-d05" secondAttribute="trailing" id="IaQ-bT-KNo"/>
+                                            <constraint firstAttribute="bottom" secondItem="ECT-H7-d05" secondAttribute="bottom" id="KZI-JA-kwJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="2pj-1d-djP" secondAttribute="trailing" id="Oev-VR-YP6"/>
+                                            <constraint firstItem="vnE-QV-yFq" firstAttribute="leading" secondItem="Ncb-dC-MjE" secondAttribute="leading" id="WRR-Bo-cxp"/>
+                                            <constraint firstItem="ECT-H7-d05" firstAttribute="leading" secondItem="Ncb-dC-MjE" secondAttribute="leading" id="WkR-8C-aOR"/>
+                                            <constraint firstItem="ECT-H7-d05" firstAttribute="leading" secondItem="Ncb-dC-MjE" secondAttribute="leading" id="f9D-GH-bip"/>
+                                            <constraint firstItem="JY5-Vi-S3v" firstAttribute="leading" secondItem="Ncb-dC-MjE" secondAttribute="leading" id="fEG-lL-UWT"/>
+                                            <constraint firstItem="2pj-1d-djP" firstAttribute="leading" secondItem="Ncb-dC-MjE" secondAttribute="leading" id="gg8-Ue-as8"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Tu-7f-ZRL"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Tu-7f-ZRL" firstAttribute="trailing" secondItem="C6h-pe-AFF" secondAttribute="trailing" constant="91" id="54h-7g-fgK"/>
+                            <constraint firstItem="C6h-pe-AFF" firstAttribute="top" secondItem="9Tu-7f-ZRL" secondAttribute="top" constant="28.5" id="Kff-qX-Ciu"/>
+                            <constraint firstItem="C6h-pe-AFF" firstAttribute="leading" secondItem="9Tu-7f-ZRL" secondAttribute="leading" constant="91" id="P85-hB-nYg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T7F-e9-fvF"/>
+                    <connections>
+                        <outlet property="epostaLabel" destination="vnE-QV-yFq" id="zJO-j4-ILd"/>
+                        <outlet property="sifreLabel" destination="2pj-1d-djP" id="bt1-XI-jF6"/>
+                        <segue destination="fly-rG-i5t" kind="show" identifier="ToWellcome" id="Uqa-rD-lg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQs-PS-YU7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="281"/>
+        </scene>
+        <!--TREN TAKİP SİSTEMİ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeScreen" customModule="tren" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-bK-46B">
+                                <rect key="frame" x="50" y="174" width="314" height="553"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9W-SL-M8y">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65002">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="70o-Db-g1v" kind="show" id="iRN-bG-xu5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysp-Du-9Br">
+                                        <rect key="frame" x="0.0" y="73" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65003">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZs-cv-kbE">
+                                        <rect key="frame" x="0.0" y="146" width="314" height="42.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65004">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lea-Td-LTm">
+                                        <rect key="frame" x="0.0" y="218.5" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65005">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeI-h1-VlZ">
+                                        <rect key="frame" x="0.0" y="291.5" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65006">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-65-yhd">
+                                        <rect key="frame" x="0.0" y="364.5" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65007">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04D-li-0Ql">
+                                        <rect key="frame" x="0.0" y="437.5" width="314" height="42.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65008">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJB-Bf-3lr">
+                                        <rect key="frame" x="0.0" y="510" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="   65009">
+                                            <imageReference key="image" image="train.side.front.car" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color systemColor="linkColor"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c1S-bK-46B" secondAttribute="trailing" constant="50" id="Hth-1T-pB8"/>
+                            <constraint firstItem="c1S-bK-46B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Sfv-ji-N26"/>
+                            <constraint firstItem="c1S-bK-46B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="g4G-un-Db6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c1S-bK-46B" secondAttribute="bottom" constant="86" id="lnc-Jj-kim"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" id="D7M-RB-bh7">
+                        <color key="badgeColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <imageReference key="selectedImage" image="homekit" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="TREN TAKİP SİSTEMİ" id="zve-S6-7cT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2147.826086956522" y="280.58035714285711"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="KCf-81-son">
+            <objects>
+                <viewController id="Fbv-mB-Zx8" customClass="HistoryViewController" customModule="tren" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tzh-G0-gMB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hasan baba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyY-Iz-jrJ">
+                                <rect key="frame" x="186" y="438" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ezm-09-hCp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="oVO-SP-EWV">
+                        <color key="badgeColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkQ-zD-JfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="1041"/>
+        </scene>
+        <!--Call View Controller-->
+        <scene sceneID="55o-P9-Vba">
+            <objects>
+                <viewController id="krq-Fx-MBD" customClass="CallViewController" customModule="tren" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R5a-Cd-goo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0541 215 06 23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idr-QY-Xbr">
+                                <rect key="frame" x="186" y="438" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sbd-T9-3jD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" id="KYc-qH-Xic">
+                        <imageReference key="image" image="iphone.radiowaves.left.and.right" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" red="0.24004156500000001" green="0.88993080079999998" blue="0.96841138599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZf-P3-1WX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963" y="997"/>
+        </scene>
+        <!--65002-->
+        <scene sceneID="Xwd-9N-b2u">
+            <objects>
+                <viewController title="65002" id="70o-Db-g1v" customClass="_5002ViewController" customModule="tren" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7O2-Vw-Ddu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dSj-Au-JvW">
+                                <rect key="frame" x="0.0" y="649" width="414" height="213"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-E4-wkb">
+                                        <rect key="frame" x="100" y="0.0" width="214" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AYLIK ORTALAMA KM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syc-Sb-iFW">
+                                                <rect key="frame" x="0.0" y="12" width="86.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-9q-IdC">
+                                                <rect key="frame" x="127.5" y="0.0" width="86.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ccL-9q-IdC" firstAttribute="width" secondItem="syc-Sb-iFW" secondAttribute="width" id="rwS-J8-NC2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-a3-vhP">
+                                        <rect key="frame" x="100" y="66" width="214" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOPLAM KM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-gG-DFq">
+                                                <rect key="frame" x="0.0" y="18" width="86.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsV-Yp-cB9">
+                                                <rect key="frame" x="127.5" y="0.0" width="86.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QsV-Yp-cB9" firstAttribute="width" secondItem="rKq-gG-DFq" secondAttribute="width" id="OLX-zE-6S9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lütfen Km Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rd3-ek-pBo">
+                                        <rect key="frame" x="100" y="132" width="214" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-ME-qby">
+                                        <rect key="frame" x="100" y="182" width="214" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="EKLE">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.23639687870000001" green="0.80578128449999997" blue="0.96841138599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.27185806239999999" green="0.41677598690000001" blue="0.96841138599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addPressed:" destination="70o-Db-g1v" eventType="touchUpInside" id="LwQ-uH-NW2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KFE-E4-wkb" secondAttribute="trailing" constant="100" id="JDj-0W-6S8"/>
+                                    <constraint firstAttribute="trailing" secondItem="fk5-a3-vhP" secondAttribute="trailing" constant="100" id="L3m-7t-rXE"/>
+                                    <constraint firstItem="fk5-a3-vhP" firstAttribute="leading" secondItem="dSj-Au-JvW" secondAttribute="leading" constant="100" id="VJo-6o-7Ry"/>
+                                    <constraint firstAttribute="trailing" secondItem="bUA-ME-qby" secondAttribute="trailing" constant="100" id="YV5-EZ-ZNu"/>
+                                    <constraint firstItem="rd3-ek-pBo" firstAttribute="leading" secondItem="dSj-Au-JvW" secondAttribute="leading" constant="100" id="q6x-vZ-rCI"/>
+                                    <constraint firstItem="KFE-E4-wkb" firstAttribute="leading" secondItem="dSj-Au-JvW" secondAttribute="leading" constant="100" id="tQV-kE-vt2"/>
+                                    <constraint firstAttribute="trailing" secondItem="rd3-ek-pBo" secondAttribute="trailing" constant="100" id="taP-2F-aFq"/>
+                                    <constraint firstItem="bUA-ME-qby" firstAttribute="leading" secondItem="dSj-Au-JvW" secondAttribute="leading" constant="100" id="zYW-9d-TNh"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W0J-vz-2ae">
+                                <rect key="frame" x="0.0" y="88" width="414" height="515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToCell" id="uaC-vR-BYi" customClass="CellTableViewCell" customModule="tren" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uaC-vR-BYi" id="8I4-G0-A6s">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="crI-tO-osl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="crI-tO-osl" firstAttribute="trailing" secondItem="dSj-Au-JvW" secondAttribute="trailing" id="LFQ-vx-4FT"/>
+                            <constraint firstItem="crI-tO-osl" firstAttribute="bottom" secondItem="dSj-Au-JvW" secondAttribute="bottom" id="WTg-A7-zal"/>
+                            <constraint firstItem="dSj-Au-JvW" firstAttribute="leading" secondItem="crI-tO-osl" secondAttribute="leading" id="xnC-lE-nvZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aaF-cc-Mrl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="4Qh-Xg-iY3"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aylıkOrtalamaKm" destination="ccL-9q-IdC" id="xcR-wE-kwZ"/>
+                        <outlet property="kmTextField" destination="rd3-ek-pBo" id="oq1-VS-6Sx"/>
+                        <outlet property="tableView" destination="W0J-vz-2ae" id="9hY-6M-HW9"/>
+                        <outlet property="totalLabel" destination="QsV-Yp-cB9" id="EdK-IB-lx0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZh-Xs-IQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2950.7246376811595" y="280.58035714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7ba-FH-dLw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C8K-AQ-Ash" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nCz-sO-PMs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w4I-vl-Gek" kind="relationship" relationship="rootViewController" id="ia3-fJ-A4H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZE-qU-e2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="281"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uWp-Cd-Ehs">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fly-rG-i5t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DV7-KZ-EGD"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="homekit" catalog="system" id="icJ-Bi-UlU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.38823530080000002" green="0.74117654560000001" blue="0.87058818339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" systemColor="systemGray6Color"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qY5-LU-afC"/>
+                        <segue destination="Fbv-mB-Zx8" kind="relationship" relationship="viewControllers" id="gRd-pe-zON"/>
+                        <segue destination="krq-Fx-MBD" kind="relationship" relationship="viewControllers" id="n6E-jk-wbm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6M-tz-k15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237.68115942029" y="280.58035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="iphone.radiowaves.left.and.right" catalog="system" width="128" height="85"/>
+        <image name="person.3.sequence" catalog="system" width="128" height="59"/>
+        <image name="train.side.front.car" catalog="system" width="128" height="73"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
